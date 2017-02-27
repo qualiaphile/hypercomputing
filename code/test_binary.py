@@ -7,7 +7,7 @@ from matplotlib import pyplot as plt
 from pentti import Pentti
 
 
-TEST = True
+TEST = False
 
 properties = ['Color', 'Shape', 'Currency', 'Language']
 prop_to_values = {}
@@ -17,7 +17,7 @@ prop_to_values['Currency'] = ['Dollar', 'Peso']
 prop_to_values['Language'] = ['English', 'Spanish']
 
 if not TEST:
-    Ns = range(1, 10000, 20); trials = 200;
+    Ns = range(1, 5000, 20); trials = 100;
     SPs = [.2, .35, .4, .5]
 else:
     Ns = range(1, 10000, 100); trials = 20;
